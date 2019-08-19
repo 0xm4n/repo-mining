@@ -1,0 +1,54 @@
+Commit SHA,Java File,Old function signature,New function signature
+3fe3b62d2bc5ac60bb85c4bed8870f51109d167c,DefaultMockingDetails.java,"DefaultMockingDetails(Object toInspect, MockUtil delegate)",DefaultMockingDetails(Object toInspect)
+0307f92995e165bd1d360f6b91e545e2ee60fe54,LenientCopyTool.java,"copy(T from, T to, Class fromClazz, Class toClass)","copy(T from, T to, Class<?> fromClazz)"
+762b2db3f76742a78d8c1647f4c61e0a4bf84a21,MockUtil.java,"resetMock(T mock, MockingProgress progress)",resetMock(T mock)
+fca2c214153725c37b7cf85a7f41793f75acd1ad,ClassPathLoader.java,loadConfiguration(IMockitoConfiguration defaultConfiguration),loadConfiguration()
+7e9220eebfebd3ea210e51a8fb78798e50452386,MockingProgressImpl.java,"mockingStarted(Object mock, Class classToMock, MockSettings mockSettings)","mockingStarted(Object mock, Class classToMock)"
+1c153d259d0680f8c0c076c3e73bbbd7d0f3cabe,VerificationOverTimeImpl.java,"VerificationOverTimeImpl(long pollingPeriodMillis, long durationMillis, VerificationMode delegate, boolean returnOnSuccess, Timer timer)","VerificationOverTimeImpl(long pollingPeriodMillis, VerificationMode delegate, boolean returnOnSuccess, Timer timer)"
+287a32263a481dd1e4ad393d3e41a9e15453ce9e,ArgumentMatchers.java,any(Class<T> clazz),any()
+3921b5d40d1d1725ca54457c3ba657c602d6286a,ClassCacheVersusClassReloadingTest.java,obtainClassPath(Class<SimplePerRealmReloadingClassLoader> aClass),obtainClassPath()
+ffdd1411d5deb263f9bea2a8dcadc7881eb2211c,InvocationsFinder.java,"findInvocations(List<Invocation> invocations, InvocationMatcher wanted, VerificationMode mode)","findInvocations(List<Invocation> invocations, InvocationMatcher wanted)"
+1a4a77996e54057ab294ce3e22fa4005d0da7132,JUnitTool.java,"createArgumentsAreDifferentException(String message, Throwable cause, String wanted, String actual)","createArgumentsAreDifferentException(String message, String wanted, String actual)"
+36d35f3daf7cb6eeb947ea93075cb57dc6cc5879,MockingProgressImpl.java,stubbingCompleted(Invocation invocation),stubbingCompleted()
+846938b41e0edd0940ce84ebe5978977d5912caa,LoggingListener.java,"LoggingListener(boolean warnAboutUnstubbed, MockitoLogger logger)",LoggingListener(boolean warnAboutUnstubbed)
+de6c65820bc791a45dd4cb842aba4726de114fd8,ClassImposterizer.java,"createProxy(InstanceFactory factory, Class<Factory> proxyClass, final MethodInterceptor interceptor)","createProxy(Class<Factory> proxyClass, final MethodInterceptor interceptor)"
+ee88d188ae5cbb0b0058e13cf747b0a609c7f606,NumberOfInvocationsVerifier.java,NumberOfInvocationsVerifier(Reporter reporter),NumberOfInvocationsVerifier()
+1821637121790ee722fdaf80bb03dc8479ef2f5a,InvalidStateDetectionTest.java,"detects(DetectsInvalidState detector, IMethods mock, Class expected)","detects(DetectsInvalidState detector, Class expected)"
+3017c401013a101b05378e4a7ddf7ff61fa8d8a0,Exceptions.java,"wantedInvocationDiffersFromActual(String wanted, String actual, String message)","wantedInvocationDiffersFromActual(String wanted, String actual)"
+d598002d7d0c8787f1fe86af68c147548bce775f,NoInteractionsWanted.java,"NoInteractionsWanted(String message, Throwable cause)",NoInteractionsWanted(String message)
+e06ee9505c6a103a15f4a7a93b6baaf161c38041,MockitoVerificationMode.java,"MockitoVerificationMode(int wantedNumberOfInvocations, Verification verification)",MockitoVerificationMode(int wantedNumberOfInvocations)
+8958712e22b7bc3e3dcbb766821c65691a1f6e1f,MissingInvocationChecker.java,"verify(List<Invocation> invocations, InvocationMatcher wanted, VerificationMode mode)","verify(List<Invocation> invocations, InvocationMatcher wanted)"
+72076a82c786cd691b80a01a8e6d741a8b0ad0db,MockitoCore.java,"mock(Class<T> classToMock, MockSettings mockSettings, boolean shouldResetOngoingStubbing)","mock(Class<T> classToMock, MockSettings mockSettings)"
+e62d927c00352be465a582a3f429c83eff6d8fcf,LastArguments.java,reportAnd(int count),reportAnd()
+eddbfa4ec788e85a3ba96d6c7425cb048ed1a228,MethodInterceptorFilter.java,"MethodInterceptorFilter(Class toMock, IMockHandler mockHandler)",MethodInterceptorFilter(IMockHandler mockHandler)
+de6c65820bc791a45dd4cb842aba4726de114fd8,ClassImposterizer.java,"imposterise(InstanceFactory factory, final MethodInterceptor interceptor, Class<T> mockedType, Collection<Class> ancillaryTypes)","imposterise(final MethodInterceptor interceptor, Class<T> mockedType, Collection<Class> ancillaryTypes)"
+ea35a0eb57bef2d9cb8a4d231faeb91202ebcd9e,MockMethodAdvice.java,"isMocked(Object instance, Method origin)",isMocked(Object instance)
+51c5fcd126afeb3e2b3eb8e9fa91a76339a8277f,NeverWantedButInvoked.java,"NeverWantedButInvoked(String message, Throwable cause)",NeverWantedButInvoked(String message)
+85c3088ab009ac37880a54066376d3d3e365f480,AllInvocationsFinder.java,allInvocationsInOrder(List<Object> mocks),allInvocationsInOrder()
+3017c401013a101b05378e4a7ddf7ff61fa8d8a0,MockitoBehavior.java,"reportDiscrepancy(ExpectedInvocation wantedInvocation, Invocation actualInvocation, String message)","reportDiscrepancy(ExpectedInvocation wantedInvocation, Invocation actualInvocation)"
+85c3088ab009ac37880a54066376d3d3e365f480,VerifyingRecorder.java,VerifyingRecorder(InvocationsFinder invocationsFinder),VerifyingRecorder()
+0d3aae0cbadce3b9b83fb6b686e12fa392126f68,MockitoStubber.java,"setInvocationForPotentialStubbing(InvocationMatcher invocation, OngoingStubbing ongoingStubbing)",setInvocationForPotentialStubbing(InvocationMatcher invocation)
+e62d927c00352be465a582a3f429c83eff6d8fcf,LastArguments.java,reportOr(int count),reportOr()
+27876964df6738e616c28980590aff8b8e93982b,MockHandlerImpl.java,"notifyStubbedAnswerLookup(Invocation invocation, Stubbing stubbingFound, MockCreationSettings<T> mockSettings)","notifyStubbedAnswerLookup(Invocation invocation, Stubbing stubbingFound)"
+01b9ebd8ab76460d8b2b59ec581a72aee08b89f9,MockitoAssertionError.java,"MockitoAssertionError(String message, StackTraceFilter filter)",MockitoAssertionError(String message)
+de6c65820bc791a45dd4cb842aba4726de114fd8,ClassImposterizer.java,"imposterise(InstanceFactory factory, final MethodInterceptor interceptor, Class<T> mockedType, Class<?>... ancillaryTypes)","imposterise(final MethodInterceptor interceptor, Class<T> mockedType, Class<?>... ancillaryTypes)"
+b636a6207177926a6f76a687de34ecb6d4631fc6,Location.java,Location(StackTraceElement[] stackTrace),Location()
+4816bf05f20b696b869633978a75dd970d032ac1,MockUtil.java,"createMock(Class<T> classToMock, MockingProgress progress, MockSettingsImpl settings)","createMock(Class<T> classToMock, MockSettingsImpl settings)"
+aeef47f0be9498aaa721457c5597ebdbcb3f2933,Reporter.java,"noMoreInteractionsWanted(PrintableInvocation undesired, Location actualLocation)",noMoreInteractionsWanted(PrintableInvocation undesired)
+7e9220eebfebd3ea210e51a8fb78798e50452386,ThreadSafeMockingProgress.java,"mockingStarted(Object mock, Class classToMock, MockSettings mockSettings)","mockingStarted(Object mock, Class classToMock)"
+185304853661d017938240eef7afced9272b7a52,ByteBuddyMockMaker.java,"MockKey(Class<T> mockedType, Set<Class> interfaces, boolean acrossClassLoaderSerialization)","MockKey(Class<T> mockedType, Set<Class> interfaces)"
+aeef47f0be9498aaa721457c5597ebdbcb3f2933,Reporter.java,"wantedButNotInvokedInOrder(PrintableInvocation wanted, PrintableInvocation previous, Location previousLocation)","wantedButNotInvokedInOrder(PrintableInvocation wanted, PrintableInvocation previous)"
+1a4a77996e54057ab294ce3e22fa4005d0da7132,ArgumentsAreDifferent.java,"ArgumentsAreDifferent(String message, Throwable cause, String wanted, String actual)","ArgumentsAreDifferent(String message, String wanted, String actual)"
+422dab1f2251e07a0ee411b27883dcfaeea35af8,StrictStubsTestListener.java,"afterTest(Collection<Object> mocks, Throwable testFailure)",afterTest(Throwable testFailure)
+c2feb7155e4af01728829980ad68097f274e831c,release.gradle,"commitIncrementedVersion(String previousVersion, String currentVersion, String buildInfo)","commitIncrementedVersion(String currentVersion, String buildInfo)"
+0d3aae0cbadce3b9b83fb6b686e12fa392126f68,Reporter.java,unfinishedStubbing(Location location),unfinishedStubbing()
+8b016d1d49b7b6b05f817efe6853eb28aa59b380,release.gradle,"commitUpdatedJavadoc(String buildInfo, String author)",commitUpdatedJavadoc(String buildInfo)
+8b016d1d49b7b6b05f817efe6853eb28aa59b380,release.gradle,"commitIncrementedVersion(String currentVersion, String buildInfo, String author)","commitIncrementedVersion(String currentVersion, String buildInfo)"
+7e9220eebfebd3ea210e51a8fb78798e50452386,CollectCreatedMocks.java,"mockingStarted(Object mock, Class classToMock, MockSettings mockSettings)","mockingStarted(Object mock, Class classToMock)"
+422dab1f2251e07a0ee411b27883dcfaeea35af8,WarningTestListener.java,"afterTest(Collection<Object> mocks, Throwable testFailure)",afterTest(Throwable testFailure)
+422dab1f2251e07a0ee411b27883dcfaeea35af8,SilentTestListener.java,"afterTest(Collection<Object> mocks, Throwable testFailure)",afterTest(Throwable testFailure)
+8958712e22b7bc3e3dcbb766821c65691a1f6e1f,InvocationsFinder.java,"findSimilarInvocation(List<Invocation> invocations, InvocationMatcher wanted, VerificationMode mode)","findSimilarInvocation(List<Invocation> invocations, InvocationMatcher wanted)"
+c5f1bba0b77a86bbb06da1d159b62cfd290cea93,InvocationContainerImpl.java,"InvocationContainerImpl(MockingProgress mockingProgress, MockCreationSettings mockSettings)",InvocationContainerImpl(MockCreationSettings mockSettings)
+8b016d1d49b7b6b05f817efe6853eb28aa59b380,release.gradle,"commitReleaseNotes(String buildInfo, String author)",commitReleaseNotes(String buildInfo)
+d4af3491da11293809062edf0dc63cc428d9b734,MockUtil.java,"resetMock(T mock, MockingProgress progress, ReturnValues returnValues)","resetMock(T mock, MockingProgress progress)"
+568b0fe5638581f6822311e9d32c89758f78c289,MissingInvocationVerifier.java,"MissingInvocationVerifier(InvocationsAnalyzer analyzer, ActualInvocationsFinder finder, Reporter reporter)","MissingInvocationVerifier(ActualInvocationsFinder finder, Reporter reporter)"
